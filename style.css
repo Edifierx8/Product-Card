@@ -1,0 +1,113 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-dark: hsl(212, 21%, 14%);
+    --clr-gray: hsl(228, 12%, 48%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-cyan: hsl(158, 36%, 37%);
+    --clr-cream: hsl(30, 38%, 92%);
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--clr-white);
+}
+
+.container {
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: var(--clr-cream);
+}
+
+
+.left {
+    flex-basis: 50%;
+    background-image: url(images/image-product-desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.right {
+    flex-basis: 50%;
+    padding: 30px;
+}
+
+
+.product h3 {
+    color:var(--clr-gray);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.right h1 {
+    color: var(--clr-dark);
+    font-family: 'Fraunces',serif;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 100%;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.right p {
+    color: var(--clr-gray);
+    font-family: 'Montserrat',sans-serif;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.price ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.price li{
+    font-family: 'Fraunces',serif;
+    margin-bottom: 30px;
+}
+
+.price li:first-of-type {
+    font-size:34px;
+    color: var(--clr-cyan);
+    font-weight: 700;
+}
+
+.price li:last-of-type {
+    margin-left: 30px;
+    color: var(--clr-gray);
+}
+
+.btn {
+    text-decoration: none;
+    background-color: var(--clr-cyan);
+    color: var(--clr-cream);
+    padding: .75rem 5rem;
+    border-radius: 5px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+}
